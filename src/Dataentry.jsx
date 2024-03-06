@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { app } from './firebaseConfig';
 import { getDatabase, ref, set } from 'firebase/database';
+//FOR AUTHENTICATION
+//import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
+import Signing from './signup';
+//for authentication
+//const auth = getAuth(app);
  // Import your Firebase configuration
 
 // Initialize Firebase
@@ -14,6 +19,11 @@ function Dataentry() {
         age:19
       });
     }
+
+        //for authentication
+  //  const signupusr = () => {
+    //  createUserWithEmailAndPassword(auth, 'shivamnavy1@gmail.com', '12345678').then((value) => console.log(value));
+   // }
     
     const gotodata = () => {
         // window.open('url') opens url in same windows
@@ -25,8 +35,7 @@ function Dataentry() {
             <h2>Enter the data</h2>
             <button className="home-login-button h-10 w-max px-2 bg-rose-600 shadow-black shadow-md rounded-md" onClick={gotodata}>Go to upload data for attendence</button>
             <button className="home-login-button h-10 w-max px-2 bg-rose-600 shadow-black shadow-md rounded-md" onClick={putData}>Go to upload data to fire</button>
-
-
+            <Signing />
             
         </div>
     );
