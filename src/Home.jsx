@@ -1,8 +1,8 @@
 const Home = () => {
     return(
-        <div className="dataentry">
-          <div className="home-content sm:">
-            <div className="quote text-5xl font-mono">
+        <div className="dataentry h-screen">
+          <div className="home-content">
+            <div className="quote text-4xl font-mono">
                 The Power <br /> of Good Advice
             </div>
           <div className="quote-para">i am the paragraph below the quotes.</div>

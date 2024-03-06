@@ -10,11 +10,12 @@ import Home from "./Home";
 function App() {
 
   return (
+    <div className="xyz bg-orange-500 w-12/12">
   <BrowserRouter>
   <Routes>
     {/* route containing "/" is for first page  */}
         <Route path="/" element={
-            <div className="bg-gradient-to-t from-rose-500 to-white min-h-screen "> 
+            <div className="bg-gradient-to-t from-rose-500 to-white h-full "> 
             <Layout />
             <Outlet />
             </div>
@@ -26,6 +27,7 @@ function App() {
         </Route>
   </Routes>
 </BrowserRouter>
+</div>
 );
 }
 
